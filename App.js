@@ -10,7 +10,7 @@ import {
  } from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
 
-import TeskList from './src/components/TeskList';
+import TeskList from './src/components/TaskList';
 
 export default function App() {
 
@@ -31,6 +31,7 @@ export default function App() {
      </View>
 
      <FlatList 
+     marginHorizontal={10}
      showsHorizontalScrollIndicator={false}
      data={task}
      keyExtractor={(item) => String(item.key)}
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     paddingBottom: 10,
     marginTop: 20,
-    color: '#FFF',
+    color: '#e1e1e6',
     fontWeight: 'bold'
   },
   fab:{
